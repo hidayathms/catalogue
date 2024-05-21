@@ -6,8 +6,8 @@ pipeline {
         stage('Lint Checks') {
             steps {
                 sh "echo ***** Starting Style checks *******"
-                // sh "npm i jslint"
-                sh "/home/centos/node_modules/jslint/bin/jslint.js server.js"
+                sh "npm i jslint"
+                sh "/node_modules/jslint/bin/jslint.js server.js"
                 sh "echo **** Starting Style checks *******"
             }
         }
