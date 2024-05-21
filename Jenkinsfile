@@ -5,14 +5,15 @@ pipeline {
     stages {
         stage('Lint Checks') {
             steps {
-                sh "echo Installing Lint Checker"
-                sh "npm i jslint"
-                sh "node_modules/jslint/bin/jslint.js server.js"
+                sh "******echo Starting Style checks*******"
+                // sh "npm i jslint"
+                sh "/home/centos/node_modules/jslint/bin/jslint.js server.js"
+                sh "******echo Starting Style checks*******"
             }
         }
         stage('Static Code Analysis') {
             steps {
-                sh "echo Static Checks ...."
+                sh "echo Starting Static code analysis checks ...."
             }
         }
     }
