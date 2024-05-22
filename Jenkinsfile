@@ -7,7 +7,7 @@ pipeline {
         stage('Lint Checks') {
             steps {
                 script {
-                    sample.info('catalogue')
+                    hello.info('catalogue')
                 }
                 sh "echo ***** Starting Style checks *******"
                 sh "npm i jslint"
