@@ -1,4 +1,4 @@
-@libarary('jenkins-shared-library') _
+@library('jenkins-shared-library') _
 pipeline { 
     agent {
         label "ws"
